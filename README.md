@@ -76,6 +76,42 @@ npm install
 npm run dev
 ```
 
+## 🔌 API Endpoints
+
+### Authentication (`/api/auth`)
+- `POST /register`: Register a new user.
+- `POST /login`: Authenticate a user and return a JWT.
+
+### Users (`/api/users`)
+- `GET /search`: Search for users by username or email. (Query param: `?query=...`)
+
+### Chat (`/api/chat`)
+- `GET /:userId`: Retrieve all chats for a specific user.
+- `POST /`: Create a new 1-on-1 chat or retrieve an existing one.
+- `GET /messages/:roomId`: specific chat messages
+
+### Admin (`/api/admin`) - *Protected*
+- `GET /stats`: View system statistics (users, messages, active chats).
+- `GET /users`: List all users with pagination and search.
+- `PUT /users/:id/ban`: Ban or unban a user.
+- `GET /chats`: View recent chats.
+- `DELETE /chats/:id`: Delete a chat and its messages.
+
+## 📡 Socket.io Events
+
+### Client Emits
+- `user_connected`: Sent when a user logs in (sends `userId`).
+- `join_room`: Joins a specific chat room.
+- `typing`: Notifies that the user is typing (sends `{ room, ... }`).
+- `stop_typing`: Notifies that typing has stopped.
+- `send_message`: Sends a message object to the server.
+
+### Server Emits
+- `user_status`: Broadcasts online/offline status updates.
+- `display_typing`: Tells other users in the room to show a typing indicator.
+- `hide_typing`: Tells other users to hide the typing indicator.
+- `receive_message`: Broadcasts the received message to the room.
+
 ## ⚙️ Configuration
 
 ### Environment Variables
