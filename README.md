@@ -2,6 +2,22 @@
 
 A robust, real-time chat application built with the MERN stack and uses Websocket API and Rest API (MongoDB, Express, React, Node.js) and Dockerized for easy deployment.
 
+![Image](https://github.com/user-attachments/assets/92970dba-2a9a-4922-9950-86cebe10a9ec)
+
+![Image](https://github.com/user-attachments/assets/81762625-1652-40d1-bc33-50e19800f6cf)
+
+![Image](https://github.com/user-attachments/assets/44732a17-6b89-49cc-ad96-936ab065bd84)
+
+![Image](https://github.com/user-attachments/assets/94b2e168-aa4c-405a-910a-5e863b521b2d)
+
+![Image](https://github.com/user-attachments/assets/a2244b20-6adf-421f-9fa9-622ccbcfe521)
+
+![Image](https://github.com/user-attachments/assets/3cc24b90-0dbb-4858-b9ac-b1f282861f69)
+
+![Image](https://github.com/user-attachments/assets/20d36897-3bee-4c0b-b986-90c444dfa10c)
+
+Video Link: https://github.com/user-attachments/assets/5ae7b658-4a4b-4d43-a899-98c4ec73a407
+
 ## 🚀 Features
 
 - **Real-time Messaging**: Instant communication powered by Socket.io.
