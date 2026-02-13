@@ -2,6 +2,9 @@
 
 A robust, real-time chat application built with the MERN stack and uses Websocket API and Rest API (MongoDB, Express, React, Node.js) and Dockerized for easy deployment.
 
+![Project Status](https://img.shields.io/badge/status-active-success.svg)
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+
 ![Image](https://github.com/user-attachments/assets/92970dba-2a9a-4922-9950-86cebe10a9ec)
 
 ![Image](https://github.com/user-attachments/assets/81762625-1652-40d1-bc33-50e19800f6cf)
