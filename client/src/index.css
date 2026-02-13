@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: dark; /* Tells browser native controls to be dark */
+  color: #f8fafc; /* default text color matches text-primary */
+  background-color: #0f172a;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  /* Removed display: flex and place-items: center which forced everything to center */
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #0f172a;
+  color: #e9edef; /* redundant ensure */
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px !important;
+  height: 6px !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}

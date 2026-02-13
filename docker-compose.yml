@@ -1,0 +1,43 @@
+version: '3.8'
+
+services:
+  server:
+    build: ./server
+    container_name: chat-server
+    ports:
+      - "5001:5000"
+    environment:
+      - PORT=5000
+      - MONGO_URI=mongodb://mongo:27017/chat-app
+      - CLIENT_URL=http://localhost:8080
+    depends_on:
+      - mongo
+    networks:
+      - chat-network
+
+  client:
+    build: ./client
+    container_name: chat-client
+    ports:
+      - "8080:80"
+    depends_on:
+      - server
+    networks:
+      - chat-network
+
+  mongo:
+    image: mongo:6
+    container_name: chat-mongo
+    ports:
+      - "27018:27017"
+    volumes:
+      - mongo-data:/data/db
+    networks:
+      - chat-network
+
+networks:
+  chat-network:
+    driver: bridge
+
+volumes:
+  mongo-data:
